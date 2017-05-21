@@ -9,7 +9,7 @@ body{
 
 p{
 	font-family: 'Open Sans';
-	font-size: 13.3px;
+	font-size: 13px;
 	color: #2c2c2c;
 	padding: 0 25px 0 30px;
 }
@@ -32,12 +32,10 @@ p{
 }
 .menu li{
 	height: 40px;
-	line-height: 40px;
 	display: inline-block;
 	list-style: none;
 	font-family: 'Open Sans';
-	font-size: 14.6px;
-	padding: 0 22px;
+	font-size: 14px;
 	margin-left: 37px;
 }
 
@@ -46,12 +44,19 @@ p{
 }
 
 .menu a{
+	line-height: 40px;
 	text-decoration: none;
 	color: #fff;
+	display: block;
+	height: 40px;
+	padding: 0 22px;
+}
+
+.menu li:hover a{
+	padding: 0 21px;
 }
 
 .menu li:hover{
-	padding: 0 21px;
 	background: url('img/bg-hover.jpg');
 	background-repeat: repeat-x;
 	border-left: 1px solid #838383;
@@ -61,13 +66,13 @@ p{
 .sidebar{
 	width: 238px;
 	border: 1px solid #c8c8c8;
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .sidebar li{
 	height: 38px;
 	list-style: none;
-	padding-left: 21px;
 	border-bottom: 1px solid #c8c8c8;
 }
 
@@ -81,17 +86,20 @@ p{
 	font-family: 'Open Sans';
 	font-size: 13px;
 	line-height: 38px;
+	display: block;
+	height: 38px;
+	padding: 0 22px;
 }
 
 .sidebar li:hover a{
 	color: #2c2c2c;
-	margin-left: 14px;
+	padding-left: 37px;
 }
 
 .content{
 	width: 682px;
-	float: right;
-	margin-left: 48px;
+	display: inline-block;
+	margin-left: 43px;
 }
 .content img{
 	width: 100%;
@@ -110,13 +118,17 @@ p{
 	margin-top: 63px; 
 }
 
+.footer ul{
+	display: inline-block;
+}
+
 .footer li{
 	height: 40px;
 	line-height: 40px;
 	display: inline-block;
 	list-style: none;
 	font-family: 'Open Sans';
-	font-size: 13.3px;
+	font-size: 13px;
 	padding: 0 22px;
 	margin-left: 37px;
 }
@@ -136,6 +148,7 @@ p{
 
 .footer span{
 	font-family: 'Open Sans';
-	font-size: 13.3px;
+	font-size: 13px;
 	margin-left: 290px;
+	line-height: 40px;
 }
